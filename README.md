@@ -23,6 +23,10 @@ This memory game is a modern take on the classic Simon game, implemented using P
 This game challenges players to remember and repeat an increasingly complex sequence of lights and sounds. Players can select their desired difficulty at the start of the game. The OLED display provides clear instructions, live score updates, and game-over messages, enhancing the user experience. 
 
 ## Components
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/jayellisau/piicodev_memory/blob/main/rememory.png?raw=true" alt="Memory Game Image 1" style="width: 48%;"/>
+  <img src="https://github.com/jayellisau/piicodev_memory/blob/main/rememory1.png?raw=true" alt="Memory Game Image 2" style="width: 48%;"/>
+</div>
 
 - Raspberry Pi Pico 
 - https://piico.dev/p8 - Expansion Board for Raspberry Pi Pico
