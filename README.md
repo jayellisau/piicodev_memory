@@ -24,10 +24,12 @@ This game challenges players to remember and repeat an increasingly complex sequ
 
 ## Components
 
-- **PiicoDev RGB LED**
-- **PiicoDev Capacitive Touch Sensor**
-- **PiicoDev Buzzer**
-- **PiicoDev OLED Display**
+- Raspberry Pi Pico 
+- https://piico.dev/p8 - Expansion Board for Raspberry Pi Pico
+- https://piico.dev/p18 - buzzer
+- https://piico.dev/p12 - touchsensor
+- https://piico.dev/p13 - LED
+- https://piico.dev/p14 - OLED Display
 
 ## Setup
 
@@ -72,12 +74,12 @@ The difficulty settings affect the speed of the light sequence:
 The LED colors can be customized by changing the `colors` list. Each color is an RGB value:
 
 ```python
-red = [255, 0, 0]
+blue = [0, 0, 255]
 amber = [225, 165, 0]
 green = [0, 255, 0]
-colors = [red, amber, green]
+colors = [blue, amber, green]
 ```
-###Speed
+### Speed
 The speed of the game can be adjusted by modifying the difficulty settings in the 
 select_difficulty function:
 ```python
@@ -90,4 +92,10 @@ def select_difficulty():
         return 300, 50, 30, "medium"
     elif choice == 2:  # Hard
         return 200, 25, 20, "hard"
+```
+### Tones
+The tones corresponding to each button can be changed by modifying the tones list:
+
+```python
+tones = [800, 600, 400]
 ```
